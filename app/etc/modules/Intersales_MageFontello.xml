@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @category   Intersales
+ * @package    Intersales_MageFontello
+ */
+-->
+<config>
+    <modules>
+        <Intersales_MageFontello>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Intersales_MageFontello>
+    </modules>
+</config>

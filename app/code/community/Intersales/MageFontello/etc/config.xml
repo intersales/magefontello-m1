@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @category   Intersales
+ * @package    Intersales_MageFontello
+ */
+-->
+<config>
+	<modules>
+		<Intersales_MageFontello>
+			<version>1.0.1.0</version>
+		</Intersales_MageFontello>
+	</modules>
+
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<magefontello before="Mage_Adminhtml">Intersales_MageFontello_Adminhtml</magefontello>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+
+	<adminhtml>
+		<translate>
+			<modules>
+				<Intersales_MageFontello>
+					<files>
+						<default>Intersales_MageFontello.csv</default>
+					</files>
+				</Intersales_MageFontello>
+			</modules>
+		</translate>
+		<layout>
+			<updates>
+				<magefontello module="Intersales_MageFontello">
+					<file>intersales_magefontello.xml</file>
+				</magefontello>
+			</updates>
+		</layout>
+	</adminhtml>
+
+	<global>
+		<blocks>
+			<magefontello>
+				<class>Intersales_MageFontello_Block</class>	
+			</magefontello>
+		</blocks>
+		<helpers>
+			<magefontello>
+				<class>Intersales_MageFontello_Helper</class>
+			</magefontello>
+		</helpers>
+		<models>
+			<magefontello>
+				<class>Intersales_MageFontello_Model</class>
+			</magefontello>
+		</models>
+		<events>
+			<core_block_abstract_prepare_layout_before>
+				<observers>
+					<intersales_magefontello_observer>
+						<type>singelton</type>
+						<class>Intersales_MageFontello_Model_Observer</class>
+						<method>addCssToHead</method>
+					</intersales_magefontello_observer>
+				</observers>
+			</core_block_abstract_prepare_layout_before>
+		</events>
+	</global>
+</config>

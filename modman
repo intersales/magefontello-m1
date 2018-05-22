@@ -1,0 +1,14 @@
+#layouts
+app/design/adminhtml/default/default/layout/* app/design/adminhtml/default/default/layout/
+
+#templates
+app/design/adminhtml/default/default/template/intersales/* app/design/adminhtml/default/default/template/intersales/
+
+#code
+app/code/community/Intersales/* app/code/community/Intersales/
+
+#module declaration
+app/etc/modules/* app/etc/modules/
+
+#translations
+app/locale/de_DE/* app/locale/de_DE/

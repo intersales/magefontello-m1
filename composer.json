@@ -1,0 +1,15 @@
+{
+    "name":"magento-modules/magefontello",
+    "type":"magento-module",
+    "description":"Add fontello icons.",
+    "authors":[
+        {
+            "name":"Daniel Rose",
+            "email":"dr@intersales.de",
+            "homepage": "http://www.intersales.de",
+            "role": "developer"
+        }
+    ], "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
